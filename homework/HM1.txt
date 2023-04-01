@@ -1,0 +1,25 @@
+HM1
+1- Link to another site, an anchor, a page on the same site.
+
+<a href="https://www.karabuk.edu.tr/en/">Visit karabuk.edu</a>
+
+<a href="karabuk.edu">About Us</a>
+
+
+2- link that dials a number,
+
+<a href="tel:+905524749046">Call Us</a>
+
+*- runs JavaScript,
+
+<a href="#" onclick="alert('Hello, world!')">Click Me</a>
+
+*- runs email client
+
+<a href="basharna@outlook.sa?subject=Hello">Email Us</a>
+
+
+
+3. Open the link in a new tab/window
+
+<a href="www.karabuk.edu.tr/en/" target="_blank">Visit  karabuk.edu.</a>

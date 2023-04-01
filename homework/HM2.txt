@@ -1,0 +1,22 @@
+HM2
+
+(Images and Image Maps)
+
+ You have an assignment to work on the contents of
+Images, Images Maps and Color in HTML5 .
+
+Give examples of the application of these topics
+
+1**Images:
+-Adding a company logo to a website
+-Adding product images to an e-commerce site
+
+2** images maps
+-Creating a map of a city or region, where each clickable area links to information about that location.
+-Creating a floor plan of a building, where each clickable area links to information about the rooms or amenities in that area.
+
+3**color 
+
+-Using a consistent color palette across a site to create a cohesive visual identity
+
+-using color to highlight important information, such as links or call-to-action buttons

@@ -1,0 +1,102 @@
+HM3
+
+
+1--Use all input types in HTML5.
+Hidden, Tel, Email, Number, Range, Search, Image, Week, Url,
+DateTime-Local, Month, Time
+
+-----------
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Types in HTML5</title>
+  </head>
+  <body>
+    <form>
+      <label for="hidden">Hidden:</label>
+      <input type="hidden" id="hidden" name="hidden" value="123">
+
+      <label for="tel">Telephone:</label>
+      <input type="tel" id="tel" name="tel" placeholder="Enter telephone number">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter email address">
+
+      <label for="number">Number:</label>
+      <input type="number" id="number" name="number" min="1" max="100" step="1" placeholder="Enter a number">
+
+      <label for="range">Range:</label>
+      <input type="range" id="range" name="range" min="0" max="100" step="1">
+
+      <label for="search">Search:</label>
+      <input type="search" id="search" name="search" placeholder="Search">
+
+      <label for="image">Image:</label>
+      <input type="image" id="image" name="image" src="image.png" alt="Submit">
+
+      <label for="week">Week:</label>
+      <input type="week" id="week" name="week">
+
+      <label for="url">URL:</label>
+      <input type="url" id="url" name="url" placeholder="Enter a URL">
+
+      <label for="datetime-local">Date/Time:</label>
+      <input type="datetime-local" id="datetime-local" name="datetime-local">
+
+      <label for="month">Month:</label>
+      <input type="month" id="month" name="month">
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time">
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+
+2--Explore the concept of Meta Information (author, description,
+generator, keywords) in HTML5 and use it in practice.
+
+Give examples of the application of these input types.
+---------
+
+1- Author
+<head>
+  <title>My Website</title>
+  <meta name="author" content="John Doe">
+</head>
+
+2-Description:
+
+<head>
+  <title>My Website</title>
+  <meta name="description" content="This is a website about gardening tips and tricks.">
+</head>
+
+3-Generator:
+
+<head>
+  <title>My Website</title>
+  <meta name="generator" content="WordPress">
+</head>
+
+4-Keywords:
+<head>
+  <title>My Website</title>
+  <meta name="keywords" content="gardening, tips, tricks, plants, flowers, vegetables">
+</head>
+
+-----<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <meta name="author" content="John Doe">
+    <meta name="description" content="This is a website about gardening tips and tricks.">
+    <meta name="generator" content="WordPress">
+    <meta name="keywords" content="gardening, tips, tricks, plants, flowers, vegetables">
+  </head>
+  <body>
+    <!-- Page content goes here -->
+  </body>
+</html>

@@ -1,0 +1,80 @@
+HM4
+
+
+*****First, create a form. Have inputs and button. Then implement it with
+Form Action using Get and Post methods with different target
+attributes.
+
+
+<form action="" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+
+
+1-Using the GET method with _self target:
+
+<form action="submit.php" method="get" target="_self">
+  <!-- Form inputs and button -->
+</form>
+
+2-Using the POST method with _blank target
+
+<form action="submit.php" method="post" target="_blank">
+  <!-- Form inputs and button -->
+</form>
+--------------------------
+
+2-Addition HW: Implement a simple canvas application in HTML5.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canvas Example</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script>
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+
+      let isDrawing = false;
+      let lastX = 0;
+      let lastY = 0;
+
+      function draw(e) {
+        if (!isDrawing) return;
+        ctx.beginPath();
+        ctx.moveTo(lastX, lastY);
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.stroke();
+        [lastX, lastY] = [e.offsetX, e.offsetY];
+      }
+
+      canvas.addEventListener('mousedown', (e) => {
+        isDrawing = true;
+        [lastX, lastY] = [e.offsetX, e.offsetY];
+      });
+
+      canvas.addEventListener('mousemove', draw);
+
+      canvas.addEventListener('mouseup', () => isDrawing = false);
+
+      canvas.addEventListener('mouseout', () => isDrawing = false);
+    </script>
+  </body>
+</html>
